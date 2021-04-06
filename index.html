@@ -40,7 +40,8 @@
      </script>
      </head>
      <body>
-      <img src="https://img0.baidu.com/it/u=2440053856,2246154168&amp;fm=26&amp;fmt=auto&amp;gp=0.jpg" alt="">
+      <img onload="alog && alog('speed.set', 'c_firstPageComplete', +new Date); alog.fire && alog.fire('mark');"
+ src="https://img0.baidu.com/it/u=2440053856,2246154168&amp;fm=26&amp;fmt=auto&amp;gp=0.jpg" alt="">
 	      <script>
         var img = document.querySelector('img')
         //小天使跟着鼠标走
@@ -49,7 +50,7 @@
 
             img.style.left = e.pageX - 50 + 'px'
             img.style.top = e.pageY - 40 + 'px'
-            console.log(1);
+           
         })
     </script>
              <center>
